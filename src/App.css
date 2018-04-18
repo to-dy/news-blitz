@@ -1,0 +1,473 @@
+button,
+button:focus {
+  background: transparent;
+  border: none;
+}
+
+button:focus {
+  outline: 1px solid #57F2CC
+}
+
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #57F2CC;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.18);
+}
+
+.icon {
+  width: 18px
+}
+
+.header .buttons {
+  width: 100vw;
+}
+
+.header .buttons .pin-btn {
+  float: left;
+}
+
+.header .buttons .search-btn {
+  float: left;
+}
+
+.header .buttons .dropdown {
+  float: right;
+}
+
+.logo {
+  width: 160px;
+  padding: 10px 0
+}
+
+.dropdown .drop-btn {
+  font-size: 16px;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 600
+}
+
+.dropdown .drop-btn img {
+  width: 18px;
+  margin-right: 6px
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+  background-color: #fff;
+  min-width: 100px;
+  margin-right: 5px;
+  box-shadow: 0px 2.5px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 15px 15px;
+  z-index: 1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.dropdown-content button:hover {
+  background-color: #eee
+}
+
+.dropdown-content button {
+  display: flex;
+  padding: 12px 12px;
+  align-items: center;
+  width: 100%;
+  font-family: inherit;
+}
+
+.dropdown-content button>img {
+  width: 18px;
+  margin-right: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  visibility: visible;
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 7px solid #333;
+  margin: 0 3px;
+}
+
+.mobile-search {
+  position: relative;
+}
+
+.s-view {
+  /* display: none; */
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  margin-left: 2px;
+  top: 24px;
+  height: 119px;
+  width: 95%;
+  background-color: #fff;
+  box-shadow: 0px 2.5px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
+  z-index: 1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.mobile-search:hover .s-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+.mobile-search:hover .inputContainer {
+  visibility: visible;
+}
+
+.inputContainer {
+  position: relative;
+  visibility: hidden;
+}
+
+.inputContainer.m {
+  display: block;
+}
+
+.inputContainer.d {
+  display: none;
+}
+
+.inputContainer input {
+  border: 2px solid #57F2CC;
+  border-radius: 50px;
+  padding: 8px 32px 8px 8px;
+  outline: none;
+  width: 262px;
+}
+
+.inputContainer button {
+  width: 22px;
+  position: absolute;
+  right: 3%;
+  top: 8px
+}
+
+.inputContainer button img {
+  width: 16px;
+}
+
+.header .category-container {
+  width: 100vw;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.header .category-container div {
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-container .category {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: auto 0 auto 0
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 1.5px solid #57F2CC;
+  border-radius: 5px
+}
+
+.checkbox-container:hover input~.checkmark {
+  background-color: #eee;
+}
+
+.checkbox-container input:checked~.checkmark {
+  border: none;
+  height: 21px;
+  width: 21px;
+  background: linear-gradient(206.41deg, #D4FFEC -76.79%, #57F2CC -0.79%, #4596FB 81.97%);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked~.checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 7.5px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2.5px 2.5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* body */
+
+.container {
+  width: 100%;
+  box-sizing: border-box
+}
+
+.container main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  box-sizing: inherit;
+  align-items: center;
+}
+
+main .exit-search {
+  position: fixed;
+  z-index: 1000;
+  top: 145px;
+  left: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 3px 3px;
+  border-radius: 3px;
+  color: #fff;
+  background: linear-gradient(206.41deg, #D4FFEC -76.79%, #57F2CC -0.79%, #4596FB 81.97%);
+}
+
+main .offline {
+  position: fixed;
+  z-index: 1000;
+  top: 135px;
+  left: 5%;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 3px 3px;
+  border-radius: 3px;
+  color: #fff;
+  background: linear-gradient(206.41deg, #D4FFEC -76.79%, #57F2CC -0.79%, #4596FB 81.97%);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  padding: 25px 0;
+}
+
+footer a {
+  color: #57F2CC;
+  font-weight: 700
+}
+
+footer .made-by {
+  padding-bottom: 5px
+}
+
+.container .sidebar {
+  display: none;
+}
+
+/* loader */
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(206.41deg, #D4FFEC -76.79%, #57F2CC -0.79%, #4596FB 81.97%);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  /* header */
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px
+  }
+  .inputContainer.d {
+    display: block;
+  }
+  .mobile-search {
+    display: none;
+  }
+  .header .buttons {
+    width: auto
+  }
+  .inputContainer {
+    visibility: visible;
+  }
+  .inputContainer input {
+    width: 320px;
+  }
+  .header .buttons .dropdown {
+    margin-left: 8px;
+  }
+  .header .category-container {
+    display: none;
+  }
+  /* body */
+  .container {
+    display: flex;
+  }
+  .container main {
+    flex: 1;
+    margin-right: 205px;
+    justify-content: space-between;
+    padding: 0 70px;
+  }
+  main .exit-search {
+    top: 80px;
+    left: 10px;
+    font-size: 16px;
+  }
+  
+  main .offline {
+    top: 80px;
+    font-size: 16px;
+  }
+  .container .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 100%;
+    border-left: 1px solid #57F2CC;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.18);
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .sidebar .sidebar-content {
+    margin-top: 100px;
+    padding: 0 15px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    padding: 25px 0;
+  }
+  .sidebar-footer a {
+    color: #57F2CC;
+    font-weight: 700
+  }
+  .sidebar-footer .made-by {
+    padding-bottom: 5px
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+}
