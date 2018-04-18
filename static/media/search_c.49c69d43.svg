@@ -1,0 +1,19 @@
+<svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(1.5 0 0 1.5 -1042.5 -2101.5)">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(695 1401)" fill="url(#paint0_linear)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-18.9286 38.1178 -18.9286 -38.1178 20.1631 -8.54364)">
+<stop offset="0" stop-color="#D4FFEC"/>
+<stop offset="0.478729" stop-color="#57F2CC"/>
+<stop offset="1" stop-color="#4596FB"/>
+</linearGradient>
+<path id="path0_fill" d="M 19.7551 18.5796L 14.9469 13.7714C 16.1388 12.3184 16.8571 10.4571 16.8571 8.42857C 16.8571 3.77551 13.0816 0 8.42857 0C 3.77143 0 0 3.77551 0 8.42857C 0 13.0816 3.77143 16.8571 8.42857 16.8571C 10.4571 16.8571 12.3143 16.1429 13.7673 14.951L 18.5755 19.7551C 18.902 20.0816 19.4286 20.0816 19.7551 19.7551C 20.0816 19.4327 20.0816 18.902 19.7551 18.5796ZM 8.42857 15.1796C 4.70204 15.1796 1.67347 12.151 1.67347 8.42857C 1.67347 4.70612 4.70204 1.67347 8.42857 1.67347C 12.151 1.67347 15.1837 4.70612 15.1837 8.42857C 15.1837 12.151 12.151 15.1796 8.42857 15.1796Z"/>
+</defs>
+</svg>
